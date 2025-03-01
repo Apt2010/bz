@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Horizontal Parallax Scrolling Sticky</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+        .section {
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2rem;
+            font-weight: bold;
+        }
+        /* Sticky Horizontal Scroll Section */
+        .horizontal-scroll-wrapper {
+            position: relative;
+            height: 400vh; /* Adjust this based on the number of horizontal sections */
+        }
+        .horizontal-scroll-container {
+            position: sticky;
+            top: 0;
+            left: 0;
+            height: 100vh;
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+        }
+        .horizontal-scroll-content {
+            display: flex;
+            height: 100%;
+            width: 400vw; /* Adjust based on the number of sections */
+            will-change: transform;
+        }
+        .scroll-item {
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 3rem;
+            font-weight: bold;
+            color: white;
+        }
+        .scroll-item:nth-child(1) { background: #FF5733; }
+        .scroll-item:nth-child(2) { background: #33FF57; }
+        .scroll-item:nth-child(3) { background: #3357FF; }
+        .scroll-item:nth-child(4) { background: #FF33A1; }
+    </style>
+</head>
+<body>
+    <div class="section bg-primary text-white">Scroll Down</div>
+    <!-- Wrapper that controls the vertical scrolling -->
+    <div class="horizontal-scroll-wrapper">
+        <div class="horizontal-scroll-container">
+            <div class="horizontal-scroll-content">
+                <div class="scroll-item">Section 1</div>
+                <div class="scroll-item">Section 2</div>
+                <div class="scroll-item">Section 3</div>
+                <div class="scroll-item">Section 4</div>
+            </div>
+        </div>
+    </div>
+    <div class="section bg-secondary text-white">Continue Scrolling</div>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const horizontalWrapper = document.querySelector(".horizontal-scroll-wrapper");
+            const horizontalContent = document.querySelector(".horizontal-scroll-content");
+            const scrollWidth = horizontalContent.scrollWidth - window.innerWidth;
+            const wrapperHeight = horizontalWrapper.offsetHeight - window.innerHeight;
+            window.addEventListener("scroll", function () {
+                const scrollY = window.scrollY;
+                const relativeScroll = (scrollY - horizontalWrapper.offsetTop) / wrapperHeight;
+                if (scrollY >= horizontalWrapper.offsetTop && scrollY <= horizontalWrapper.offsetTop + wrapperHeight) {
+                    horizontalContent.style.transform = `translateX(${-scrollWidth * relativeScroll}px)`;
+                }
+            });
+        });
+    </script>
+</body>
+</html>
