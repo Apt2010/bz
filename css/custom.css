@@ -489,6 +489,7 @@ header.main-header .header-sticky.active{
 .main-menu ul li{
 	margin: 0;
 	position: relative;
+	margin-left: 20px;
 }
 
 .main-menu ul li.nav-item a{
@@ -1082,7 +1083,7 @@ body:has(.offcanvas){
 
 .about-us-images{
     position: relative;
-     padding: 110px 140px 150px 20px; 
+     padding: 110px 110px 150px 20px; 
     /* margin-right: 50px; */
 	margin-right: 0px;
 	/* padding: 0px 0px 0px 0px;
@@ -5917,7 +5918,7 @@ body:has(.offcanvas){
 /************************************/
 
 .error-page{
-	padding: 160px 0 80px;
+	/* padding: 160px 0 80px; */
 }
 
 .error-page-image{
@@ -5928,6 +5929,7 @@ body:has(.offcanvas){
 .error-page-image img{
 	width: 100%;
 	max-width: 50%;
+	height: 400px;
 }
 
 .error-page .error-page-content{
@@ -5950,6 +5952,22 @@ body:has(.offcanvas){
 
 	.navbar{
 		padding: 20px 0;
+		position: relative;
+	}
+	.page-header-box h1 .bread{
+		font-size: 30px !important;
+	}
+	.paragraph{
+		width: 100% !important;
+	}
+	.slicknav_nav li, .slicknav_nav ul{
+		margin: 5px;
+	}
+	.slicknav_nav a{
+		border-bottom: 1px solid #d9730075;
+	}
+	.buton{
+		float: left;
 	}
 
 	.slicknav_nav li,
@@ -5997,6 +6015,7 @@ body:has(.offcanvas){
 
 	.section-title p{
 		margin-top: 15px;
+		font-size: 14px;
 	}
 
 	.section-content-btn .section-title-content{
@@ -6637,8 +6656,8 @@ body:has(.offcanvas){
 	}
 
 	.page-header{
-		padding: 182px 0 80px;
-		margin-top: -92px;
+		padding: 10px 0 10px;
+		margin-top: 0px;
 	}
 
 	.page-header-box h1{
@@ -7384,18 +7403,25 @@ body:has(.offcanvas){
 	}
 }
 
+  
 @media only screen and (max-width: 767px){
 
 	body{
 		background-size: 200% auto;
 	}
-
+	
+	.section-title .mobi{
+		display: none;
+	}
+	.btn-default{
+		margin-right: 50px;
+	}
 	.section-title h1{
         font-size: 30px;
     }
 
 	.section-title h2{
-        font-size: 30px;
+        font-size: 22px;
     }
 
 	.hero-content{
@@ -7496,7 +7522,7 @@ body:has(.offcanvas){
     }
 
 	.our-services-nav ul{
-		gap: 30px 0;
+		gap: 40px 0;
 		padding: 0 0 20px 0;
 	}
 
@@ -7505,7 +7531,7 @@ body:has(.offcanvas){
 	}
 
 	.our-services-nav ul li .nav-link{
-        font-size: 16px;
+        font-size: 12px;
 		padding: 0 2px;
     }
 
@@ -7821,11 +7847,11 @@ body:has(.offcanvas){
     }
 
 	.footer-work-together h3{
-        font-size: 18px;
+        font-size: 14px;
     }
 
 	.footer-work-together h2{
-        font-size: 55px;
+        font-size: 50px;
     }
 
 	.work-together-btn{
@@ -7896,6 +7922,7 @@ body:has(.offcanvas){
 
 	.page-header-box h1{
 		font-size: 30px;
+		line-height: 64px !important;
 	}
 
 	.page-header-box ol li.breadcrumb-item{
@@ -8378,8 +8405,10 @@ body:has(.offcanvas){
 /* other css */
 
 .buton{
-	margin-left: 40px !important;
+	/* margin-left: 40px !important; */
 }
+
+
 .copt{
 	margin-bottom: 0;
 }
