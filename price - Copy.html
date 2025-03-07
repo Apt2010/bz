@@ -151,7 +151,7 @@
 			<input id="monthly" type="radio" name="switchplan" onclick="togglePlan()" checked="checked">
 			<input id="yearly" type="radio" name="switchplan" onclick="togglePlan()">
 			<label for="monthly" id="monthlabel" >Monthly</label>
-			<label for="yearly" id="yearlabel">Yearly</label>
+			<label for="yearly" id="yearlabel">Yearly (Save 20%)</label>
 			<span class="highlighter"></span>
 		</div>
                     <!--<span id="toggle-label">Monthly</span>
@@ -198,7 +198,7 @@
                     <!-- Pricing Body Start -->
                     <div class="pricing-body">
                         <h3>Free Trial</h3>
-                        <h2>7<sub> Days</sub></h2>
+                        <h2>30<sub>/ Days</sub></h2>
                        <p>Unlock Free Trial</p>
                        <p>No credit card is needed. </p>
                     </div>
@@ -207,7 +207,7 @@
 
                     <!-- Pricing Button Start -->
                     <div class="pricing-btn">
-                        <a href="http://192.168.0.23/bz-new/register/64ace5ada55a5144a8f3c191/trial/642fdf89f03aff3d1ada307e" class="btn-highlighted">Try for free</a>
+                        <a href="#" class="btn-highlighted">Try for free</a>
                     </div>
                     <!-- Pricing Button End -->
                 </div>
@@ -245,10 +245,10 @@
                     <!-- Pricing Body Start -->
                     <div class="pricing-body">
                         <div class="pricing-body">
-                            <h3>US dollar</h3>
-                            <h2 id="pro-price">$5.00<sub></sub></h2>
+                            <h3>United States dollar</h3>   
+                            <h2 id="pro-price">$5.00    </h2>
                             <p>Per license </p>
-                            <p id='usdspan'> <span style="color: #e70202;text-decoration: line-through;" >USD 11.99</span>  per month</p> 
+                            <p> <span style="color: #e70202;text-decoration: line-through;">USD 11.99</span>  per month</p> 
                         </div>
                        
                         <!-- <p class="price" >USD 60.00/-</p> -->
@@ -259,7 +259,7 @@
 
                     <!-- Pricing Button Start -->
                     <div class="pricing-btn">
-                        <a href="http://192.168.0.23/bz-new/register/64ace5ada55a5144a8f3c191/trial/642fdf89f03aff3d1ada307e" class="btn-default">Purchase Now</a>
+                        <a href="#" class="btn-default">Purchase Now</a>
                     </div>
                     <!-- Pricing Button End -->
                 </div>
@@ -284,7 +284,7 @@
                         <li>&nbsp;<i class="fa fa-check-circle"></i></li>
                       
                         <li>Secure Payment for USD</li>
-                        <li>Powered by  <img src="http://192.168.0.23/bz-new/assets/images/stripe.png" width="70" alt="stripe"></li> 
+                        <li>Powered by  <img src="images/stripe.png" width="70" alt="razorpay"></li> 
                      </ul>
                      
                 </div>
@@ -297,9 +297,9 @@
                     <div class="pricing-body">
                         <div class="pricing-body">
                             <h3>Indian Rupee </h3>
-                            <h2 id="enterprise-price">₹425.00<sub></sub></h2>
+                            <h2 id="enterprise-price">₹425.00</h2>
                             <p>Per license                       </p>
-                            <p id='inrspan'> <span style="color: #e70202;text-decoration: line-through;" >INR 1,019.99</span>  per month</p>
+                            <p> <span style="color: #e70202;text-decoration: line-through;">INR 11.99</span>  per month</p>
                         </div>
                         <!-- <p class="price" id="enterprise-price">INR 425.00/-</p>
                         <p>Per license</p> -->
@@ -309,7 +309,7 @@
 
                     <!-- Pricing Button Start -->
                     <div class="pricing-btn">
-                        <a href="http://192.168.0.23/bz-new/register/64ace5ada55a5144a8f3c191/trial/642fdf89f03aff3d1ada30ae" class="btn-default">Purchase Now</a>
+                        <a href="#" class="btn-default">Purchase Now</a>
                     </div>
                     <!-- Pricing Button End -->
                 </div>
@@ -335,7 +335,7 @@
                         <li>&nbsp;<i class="fa fa-check-circle"></i></li>
                        
                        <li>Secure Payment for INR</li>
-                        <li>Powered by  <img src="http://192.168.0.23/bz-new/assets/images/Razorpay.png" width="120" alt="razorpay"></li> 
+                        <li>Powered by  <img src="images/Razorpay.png" width="120" alt="razorpay"></li> 
                      </ul>
                 </div>
               
@@ -499,77 +499,37 @@
     </div>
 </div>
 <!-- Our Faqs Section End -->
-<script>
-    //  function togglePlan() { alert();
-     //     const toggle = document.getElementById("toggle");
-     //     const basicPrice = document.getElementById("basic-price");
-     //     const proPrice = document.getElementById("pro-price");
-     //     const enterprisePrice = document.getElementById("enterprise-price");
-     //     const toggleLabel = document.getElementById("toggle-label");
-
-     //     if (toggle.checked) {
-     //         toggleLabel.textContent = "Yearly";
-     //         basicPrice.textContent = "$96/year";
-     //         proPrice.textContent = "$192/year";
-     //         enterprisePrice.textContent = "$480/year";
-     //     } else {
-     //         toggleLabel.textContent = "Monthly";
-     //         basicPrice.textContent = "$10/mo";
-     //         proPrice.textContent = "$20/mo";
-     //         enterprisePrice.textContent = "$50/mo";
-     //     }
-     // }
-     function togglePlan() {
-    const yearly = document.getElementById("yearly").checked;
-
-let priceElement = document.getElementById("pro-price");
-let priceElementyr = document.getElementById("enterprise-price");
-let priceElementusd = document.getElementById("usdspan");
-let priceElementinr = document.getElementById("inrspan");
-
-// Check if priceElement exists before using match()
-if (priceElement) {
-let currentPrice = priceElement.textContent.match(/\$([\d.]+)/);
-currentPrice = currentPrice ? currentPrice[1] : null;
-
-if (currentPrice === "5.00") {
- priceElement.innerHTML = "$60.00<sub></sub>";
- priceElementusd.innerHTML ="<span style='color: #e70202;text-decoration: line-through;' >USD 143.99</span>  per year";
- 
- 
-} else {
- priceElement.innerHTML = "$5.00<sub></sub>";
- priceElementusd.innerHTML ="<span style='color: #e70202;text-decoration: line-through;' >USD 11.99</span>  per month";
-}
-}
-
-// Check if priceElementyr exists before using match()
-if (priceElementyr) {
-let currentPriceyr = priceElementyr.textContent.match(/\₹([\d.]+)/);
-currentPriceyr = currentPriceyr ? currentPriceyr[1] : null;
-
-
-if (currentPriceyr === "425.00") {
- priceElementyr.innerHTML = "₹5100.00<sub></sub>";
- priceElementinr.innerHTML ="<span style='color: #e70202;text-decoration: line-through;' >INR 12,239.99</span>  per year";
-} else {
- priceElementyr.innerHTML = "₹425.00<sub></sub>";
- priceElementinr.innerHTML ="<span style='color: #e70202;text-decoration: line-through;' >INR 1,019.99.00</span>  per month";
-}
-}
-     
-     
-     
-     
-    // document.getElementById("toggle-label").textContent = yearly ? "Yearly" : "Monthly";
-    // document.getElementById("basic-price").textContent = yearly ? "$96/year" : "$10/mo";
+        <script>
+            // function togglePlan() {
+            //     const toggle = document.getElementById("toggle");
+            //     const basicPrice = document.getElementById("basic-price");
+            //     const proPrice = document.getElementById("pro-price");
+            //     const enterprisePrice = document.getElementById("enterprise-price");
+            //     const toggleLabel = document.getElementById("toggle-label");
     
-     //document.getElementById("pro-price").textContent = yearly ? "$60 " : "$5";
-       // document.getElementById("pro-price").innerHTML  = "$60 ";
-    //document.getElementById("enterprise-price").textContent = yearly ? "$ 60/-year" : "$ 5/month";
- }
+            //     if (toggle.checked) {
+            //         toggleLabel.textContent = "Yearly";
+            //         basicPrice.textContent = "$96/year";
+            //         proPrice.textContent = "$192/year";
+            //         enterprisePrice.textContent = "$480/year";
+            //     } else {
+            //         toggleLabel.textContent = "Monthly";
+            //         basicPrice.textContent = "$10/mo";
+            //         proPrice.textContent = "$20/mo";
+            //         enterprisePrice.textContent = "$50/mo";
+            //     }
+            // }
+            function togglePlan() {
+            const yearly = document.getElementById("yearly").checked;
+			//alert(yearly);
+            //document.getElementById("toggle-label").textContent = yearly ? "Yearly" : "Monthly";
+            // document.getElementById("basic-price").textContent = yearly ? "$96/year" : "$10/mo";
+           
+            // document.getElementById("pro-price").textContent = yearly ? "$60 " : "$5";
+            // document.getElementById("enterprise-price").textContent = yearly ? "$ 60/-year" : "$ 5/month";
+        }
 
- </script>
+        </script>
 
         
     
@@ -891,6 +851,9 @@ if (currentPriceyr === "425.00") {
     }
     .section-row {
     margin-bottom: 20px;
+}
+.prtbut:hover{
+    background-color: #f79221;
 }
     
 </style>

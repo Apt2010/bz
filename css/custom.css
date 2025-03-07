@@ -8472,10 +8472,14 @@ a{
 	color: #f79221;
 }
 
-.switch-wrapper{position:relative;display:inline-flex;padding:8px;border:1px solid #fb9110;margin-bottom:40px;border-radius:30px;background:#fff; color: #000;}.switch-wrapper [type="radio"]{position:absolute;left:-9999px}.switch-wrapper [type="radio"]:checked#monthly~label[for="monthly"],.switch-wrapper [type="radio"]:checked#yearly~label[for="yearly"]{color:#fff}.switch-wrapper label{font-size:16px;padding:1px 20px 0px 15px;z-index:1;line-height:32px;cursor:pointer;border-radius:30px;transition:color 0.25s ease-in-out}.switch-wrapper .highlighter{position:absolute;top:0px;left:1px;width:calc(50% - 4px);height:calc(100% - 0px);border-radius:30px;background:#fb9110;transition:transform 0.25s ease-in-out}.switch-wrapper [type="radio"]:checked#yearly+label[for="monthly"]~.highlighter{transform:translateX(53%);}
+.switch-wrapper{position:relative;display:inline-flex;padding:8px;border:1px solid #fb9110;margin-bottom:40px;border-radius:30px;background:#fff; color: #000;width: 240px;}
+.switch-wrapper [type="radio"]{position:absolute;left:-9999px}.switch-wrapper [type="radio"]:checked#monthly~label[for="monthly"],.switch-wrapper [type="radio"]:checked#yearly~label[for="yearly"]{color:#fff}
+.switch-wrapper label{font-size:16px;padding:1px 20px 0px 15px;z-index:1;line-height:32px;cursor:pointer;border-radius:30px;transition:color 0.25s ease-in-out; width: 200px;text-align: center;}
+.switch-wrapper .highlighter{position:absolute;top:0px;left:0px;width:calc(50% - 4px);height:calc(100% - 0px);border-radius:30px;background:#fb9110;transition:transform 0.25s ease-in-out}
+.switch-wrapper [type="radio"]:checked#yearly+label[for="monthly"]~.highlighter{transform:translateX(53%);}
 
-.switch-wrapper [type="radio"]:checked#monthly~.highlighter{width: 110px;}
-.switch-wrapper [type="radio"]:checked#yearly~.highlighter{width: 190px;}
+.switch-wrapper [type="radio"]:checked#monthly~.highlighter{width: 130px;}
+.switch-wrapper [type="radio"]:checked#yearly~.highlighter{width: 130px;left: 40px;}
 .tops{	
 	background-color: #1F1F1F;
     padding-top: 10px;
