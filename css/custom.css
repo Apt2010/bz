@@ -468,6 +468,7 @@ header.main-header .header-sticky.active{
 	position: fixed;
     width: 100%;
     background: #000;
+	margin-top: 30px;
 }
 
 .navbar-brand{
@@ -916,7 +917,7 @@ body:has(.offcanvas){
 	position: relative;
 	width: 100%;
 	max-width: 1100px;
-	margin: 0 auto 80px;
+	margin: 100px auto 80px;
 	text-align: center;
 	z-index: 2;
 }
@@ -1050,7 +1051,7 @@ body:has(.offcanvas){
 
 .about-us{
 	position: relative;
-	padding: 150px 0 150px;
+	padding: 90px 0 90px;
 	
 }
 
@@ -1308,7 +1309,7 @@ body:has(.offcanvas){
 /************************************/
 
 .our-services{
-	padding: 120px 0px 120px 0px;
+	padding: 90px 0 90px;
 }
 
 .our-services-nav{
@@ -1849,7 +1850,7 @@ body:has(.offcanvas){
 /************************************/
 
 .our-feature{
-	padding: 80px 0 150px;
+	padding: 90px 0 90px;
 }
 
 .our-feature-item{
@@ -1970,7 +1971,7 @@ body:has(.offcanvas){
 
 .our-advantages{
 	position: relative;
-	padding: 100px 0 150px;
+	padding: 90px 0 90px;
 }
 
 .our-advantages::before{
@@ -2258,7 +2259,7 @@ body:has(.offcanvas){
 
 .our-testimonials{
 	position: relative;
-	padding: 80px 0;
+	padding: 90px 0 90px;
 }
 
 .our-testimonials::before{
@@ -2483,7 +2484,7 @@ body:has(.offcanvas){
 
 .our-faqs{
 	position: relative;
-	padding: 150px 0 150px;
+	padding: 90px 0 90px;
 }
 
 .our-faqs::before{
@@ -2704,7 +2705,7 @@ body:has(.offcanvas){
 /************************************/
 
 .our-blog{
-	padding: 80px 0 50px;
+	padding: 90px 0 90px;
 }
 
 .post-item{
@@ -2757,7 +2758,7 @@ body:has(.offcanvas){
 
 .footer-work-together{
 	position: relative;
-	padding: 160px 0;
+	padding: 90px 0 90px;
 }
 
 .footer-work-together::before{
@@ -3049,7 +3050,7 @@ body:has(.offcanvas){
 
 .footer-social-links{
 	text-align: left;
-	margin-top: 30px;
+	/* margin-top: 30px; */
 }
 
 .footer-social-links ul{
@@ -3179,7 +3180,7 @@ body:has(.offcanvas){
 
 .our-approach-content{
 	position: sticky;
-	top: 20px;
+	top: 150px;
 	margin-right: 30px;
 }
 
@@ -5954,6 +5955,21 @@ body:has(.offcanvas){
 		padding: 20px 0;
 		position: relative;
 	}
+	.intro-video-list ul{
+		margin-bottom: 30px !important;
+		margin-left: 10px !important;
+	}
+	.news-metainfo li.author{
+		margin-bottom: 20px;
+	}
+	.conbut{
+		width: 44% !important;
+	}
+	.suibut{
+		margin-bottom: 50px;
+	}
+	.tops{display: none;}
+	.navbar{margin-top: 0;}
 	.page-header-box h1 .bread{
 		font-size: 30px !important;
 	}
@@ -6076,7 +6092,7 @@ body:has(.offcanvas){
 	}
 
 	.about-us{
-		padding: 80px 0 40px;
+		padding: 80px 0 80px;
 	}
 
 	.about-us::before{
@@ -6120,7 +6136,7 @@ body:has(.offcanvas){
 	}
 
 	.our-services{
-		padding: 40px 0;
+		padding: 40px 0 80px;
 	}
 
 	.our-services-nav{
@@ -6305,7 +6321,7 @@ body:has(.offcanvas){
 	}
 
 	.our-feature{
-		padding: 40px 0 10px;
+		padding: 40px 0 80px;
 	}
 
 	.our-feature-item{
@@ -6337,7 +6353,7 @@ body:has(.offcanvas){
 	}
 
 	.our-advantages{
-		padding: 40px 0;
+		padding: 40px 0 80px;
 	}
 
 	.our-advantages::before{
@@ -6407,7 +6423,7 @@ body:has(.offcanvas){
 	}
 
 	.our-testimonials{
-		padding: 40px 0;
+		padding: 40px 0 80px;
 	}
 
 	.our-testimonials::before{
@@ -6470,7 +6486,7 @@ body:has(.offcanvas){
 	}
 	
 	.our-faqs{
-		padding: 40px 0;
+		padding: 40px 0 80px;
 	}
 
 	.our-faqs::before{
@@ -6536,7 +6552,7 @@ body:has(.offcanvas){
 	}
 
 	.our-blog{
-		padding: 40px 0 10px;
+		padding: 40px 0 80px;
 	}
 
 	.post-item-content,
@@ -6554,7 +6570,7 @@ body:has(.offcanvas){
 	}
 
 	.footer-work-together{
-		padding: 40px 0;
+		padding: 40px 0 80px;
 	}
 
 	.footer-work-together::before{
@@ -7409,6 +7425,26 @@ body:has(.offcanvas){
 	body{
 		background-size: 200% auto;
 	}
+	.suibut{
+		margin-bottom: 50px;
+	}
+	.intro-video-header{
+		gap: 0 !important;
+	}
+	.intro-video-list ul li{
+		width: calc(100% - 0px) !important;
+	}
+	.intro-video-box{
+		padding: 0 !important;
+		border-radius:5px !important;
+	}
+	
+	.conbut{
+		width: 44% !important;
+	}
+	.to
+	.tops{display: none;}
+	.navbar{margin-top: 0;}
 	
 	.section-title .mobi{
 		display: none;
@@ -8440,3 +8476,19 @@ a{
 
 .switch-wrapper [type="radio"]:checked#monthly~.highlighter{width: 110px;}
 .switch-wrapper [type="radio"]:checked#yearly~.highlighter{width: 190px;}
+.tops{	
+	background-color: #1F1F1F;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+}
+
+.tops p a{
+	color: #f79221;
+}
+.shar{
+	margin-left: 10px;	
+}
